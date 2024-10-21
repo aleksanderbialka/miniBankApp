@@ -19,6 +19,8 @@ services:
       - "3000:3000"
     volumes:
       - ./frontend/miniBank:/app
+    command: >
+      sh -c "npm install && npm start"
 
   db:
     image: postgres
