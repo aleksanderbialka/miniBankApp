@@ -49,3 +49,12 @@ Aby zalogować się do panelu administratora, musisz najpierw utworzyć superuż
 docker-compose exec web python manage.py createsuperuser
 ```
 Następnie należy zalogować się na utworzone konto, a w górnym panelu ukaże się zakładka **Panel administratora**.
+
+### Wybrane zrzuty ekranu aplikacji:
+<img width="1440" alt="Zrzut ekranu 2024-10-22 o 00 07 07" src="https://github.com/user-attachments/assets/622f51f7-6803-4199-b56a-aced488c20dd">
+
+<img width="1440" alt="Zrzut ekranu 2024-10-22 o 00 07 15" src="https://github.com/user-attachments/assets/647b6158-b922-461b-b9d9-18c59cf75848">
+<img width="1440" alt="Zrzut ekranu 2024-10-22 o 00 08 16" src="https://github.com/user-attachments/assets/08d2a72e-27fb-4252-a8d2-b3e4e65a146f">
+<img width="1440" alt="Zrzut ekranu 2024-10-22 o 00 09 32" src="https://github.com/user-attachments/assets/b792e75c-6e0e-4c0e-86e4-3dbbe18535ed">
+<img width="1440" alt="Zrzut ekranu 2024-10-22 o 00 08 35" src="https://github.com/user-attachments/assets/c8911b39-1ab5-418a-92c3-67a6b618b5d2">
+
