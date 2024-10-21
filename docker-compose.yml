@@ -1,0 +1,38 @@
+
+services:
+  web:
+    build:
+      context: ./backend/miniBank
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/miniBank:/app
+    depends_on:
+      - db
+
+  frontend:
+    build:
+      context: ./frontend/miniBank
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend/miniBank:/app
+
+  db:
+    image: postgres
+    container_name: postgres_db
+    environment:
+      POSTGRES_DB: mini_bank_db
+      POSTGRES_USER: postgres_user
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+
+
