@@ -40,4 +40,12 @@ docker-compose exec web python manage.py migrate
 - Frontend (React): [http://localhost:3000](http://localhost:3000)
 - Backend (Django): [http://localhost:8000](http://localhost:8000)
 
+### Panel administratora Django
+Panel administratora pozwala na zarządzanie użytkownikami, transakcjami oraz innymi elementami systemu. Oto, jak możesz z niego skorzystać:
 
+Aby zalogować się do panelu administratora, musisz najpierw utworzyć superużytkownika. Wykonaj poniższe polecenie:
+
+```bash
+docker-compose exec web python manage.py createsuperuser
+```
+Następnie należy zalogować się na utworzone konto, a w górnym panelu ukaże się zakładka **Panel administratora**.
